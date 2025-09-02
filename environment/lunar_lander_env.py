@@ -1,4 +1,3 @@
-import gymnasium as gym
 
 # Action Space
 
@@ -10,5 +9,5 @@ import gymnasium as gym
 
 # continuous = False means the action space is discrete (4 actions)
 
-def create_lunar_lander_env():
-    return gym.make("LunarLander-v3", continuous=False, gravity=-10.0, enable_wind=False)
+def create_lunar_lander_env(gym):
+    return gym.make("LunarLander-v3", render_mode="human", continuous=False, gravity=-10.0, enable_wind=False)
