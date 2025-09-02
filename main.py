@@ -2,10 +2,9 @@ import gymnasium as gym
 from environment.lunar_lander_env import create_lunar_lander_env
 from stable_baselines3 import DQN
 from agent.deep_q_network import dqn_agent
-from agent.action import interpret_action
-from agent.observation import interpret_observation
 from train_model.train import train_model
 from testing.evaluate import evaluate
+from recording_evaluate.record import record
 
 # 1. Lunar Lander environment
 env = create_lunar_lander_env(gym)
@@ -17,5 +16,8 @@ model = dqn_agent(env, DQN)
 model_train = train_model(env, model)
 
 
-# 4. Evaluate the trained model
-evaluate(env, model_train)
+# # 4. Evaluate the trained model
+# evaluate(env, model_train)
+
+# 5. Record evaluation episodes with statistics and video
+record(env, model_train)
