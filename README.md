@@ -2,6 +2,12 @@
 
 A Deep Q-Network (DQN) implementation for solving the Gymnasium Lunar Lander environment using reinforcement learning.
 
+
+
+https://github.com/user-attachments/assets/f8244670-24e4-4fd3-892f-26e2c9cd5d2c
+
+
+
 ## Project Structure
 
 ```
