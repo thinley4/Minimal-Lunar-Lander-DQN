@@ -14,5 +14,6 @@ def create_lunar_lander_env(gym):
 
 
 # render_mode
-# rgb_array needed for video recording
-# human for rendering
+
+# render_mode = rgb_array, needed for video recording
+# render_mode = human, for rendering

@@ -24,4 +24,4 @@ def train_model(env, model):
 
     # Train the model
     print("\nTraining the DQN agent...")
-    return model.learn(total_timesteps=30000)
+    return model.learn(total_timesteps=10000)
